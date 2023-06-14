@@ -52,3 +52,5 @@ CMD ["npm", "run", "start"]
 ```cd FullStack_NodeJS_MySql_Prometheus/web_app_files/containers/node_app/codebase_partner```
 
 ```docker build -t myapp .```
+
+```docker run -p 3000:3000 myapp```
