@@ -21,3 +21,15 @@ The ```prom-client``` npm module can be installed via:
 ```
 npm install prom-client
 ```
+However, it is installed by default with the command ```npm install``` along with the other packages and doesn't need an explicit command. So, we leave our Docker file unchanged:
+
+```
+FROM node:11-alpine
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+COPY . .
+RUN npm install
+EXPOSE 3000
+CMD ["npm", "run", "start"]
+
+```
