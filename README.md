@@ -40,5 +40,8 @@ CMD ["npm", "run", "start"]
 <img width="700" alt="Screenshot 2023-06-14 at 20 58 10" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/58a6e697-2fa4-4493-b4d5-7ac77757269b">
 
 3. Modify the index.js file:
+   - Import the dependency
+   - Set up Prometheus to collect default metrics
+   - Add an endpoint to expose metrics
 
 <img width="1000" alt="Screenshot 2023-06-14 at 21 04 35" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/438a0b64-f451-4dbd-ac7a-dc4b22478064">
