@@ -8,7 +8,7 @@ This time I will set up the scraping of the default metrics and use the standard
 
 https://grafana.com/blog/2018/08/02/the-red-method-how-to-instrument-your-services/
 
-
+<img width="1000" alt="Screenshot 2023-06-14 at 22 37 33" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/1ad3ea29-ea41-4624-a0f5-89dd16fda007">
 
 ## Modifying the app files to allow Prometheus collecting metrics
 
