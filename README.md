@@ -92,3 +92,9 @@ datasources:
 
 
 ## Launch Grafana dashboards
+
+1.eee
+
+2.rrr
+
+3.ttt
