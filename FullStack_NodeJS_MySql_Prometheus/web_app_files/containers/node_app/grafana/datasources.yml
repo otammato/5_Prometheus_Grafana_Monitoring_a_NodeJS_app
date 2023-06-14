@@ -1,0 +1,23 @@
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    orgId: 1
+    url: http://54.90.15.69:9090
+    basicAuth: false
+    isDefault: true
+    editable: true
+
+---
+
+providers:
+  - name: 'Prometheus'
+    orgId: 1
+    folder: ''
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /etc/grafana/provisioning/datasources/

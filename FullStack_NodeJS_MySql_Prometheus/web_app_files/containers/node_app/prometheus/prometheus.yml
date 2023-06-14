@@ -1,0 +1,6 @@
+global:
+  scrape_interval: 5s
+scrape_configs:
+  - job_name: "example-nodejs-app"
+    static_configs:
+      - targets: ["54.90.15.69:3000"]
