@@ -54,3 +54,5 @@ CMD ["npm", "run", "start"]
 ```docker build -t myapp .```
 
 ```docker run -p 3000:3000 myapp```
+
+## Launch the Prometheus container
