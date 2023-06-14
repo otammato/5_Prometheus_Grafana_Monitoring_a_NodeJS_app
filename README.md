@@ -16,6 +16,8 @@ https://grafana.com/blog/2018/08/02/the-red-method-how-to-instrument-your-servic
    
   ```prom-client``` is the most popular Prometheus client libary for Node.js. It provides the building blocks to export metrics to Prometheus via the pull and push methods and supports all Prometheus metric types such as histogram, summaries, gauges and counters.
 
+  https://www.npmjs.com/package/prom-client
+
 The ```prom-client``` npm module can be installed via:
 
 ```
@@ -31,5 +33,6 @@ COPY . .
 RUN npm install
 EXPOSE 3000
 CMD ["npm", "run", "start"]
-
 ```
+
+2. 
