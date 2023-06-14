@@ -35,4 +35,6 @@ EXPOSE 3000
 CMD ["npm", "run", "start"]
 ```
 
-2. 
+2. Add a dependency in ```package.json``` file
+   
+<img width="700" alt="Screenshot 2023-06-14 at 20 58 10" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/58a6e697-2fa4-4493-b4d5-7ac77757269b">
