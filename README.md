@@ -72,6 +72,4 @@ scrape_configs:
 
 ## Launch the Grafana container
 
-```
-cd FullStack_NodeJS_MySql_Prometheus/web_app_files/containers/node_app/grafana
-```
+```cd FullStack_NodeJS_MySql_Prometheus/web_app_files/containers/node_app/grafana```
