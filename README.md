@@ -73,3 +73,18 @@ scrape_configs:
 ## Launch the Grafana container
 
 ```cd FullStack_NodeJS_MySql_Prometheus/web_app_files/containers/node_app/grafana```
+
+```yml
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    orgId: 1
+    url: http://localhost:9090
+    basicAuth: false
+    isDefault: true
+    editable: true
+
+```
