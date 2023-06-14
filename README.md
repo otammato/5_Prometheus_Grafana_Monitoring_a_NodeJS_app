@@ -57,4 +57,6 @@ CMD ["npm", "run", "start"]
 
 ## Launch the Prometheus container
 
+```cd FullStack_NodeJS_MySql_Prometheus/web_app_files/containers/node_app/prometheus```
+
 ```ec2-user:~/environment/FullStack_NodeJS_MySql_Docker/web_app_files/containers/node_app/prometheus (main) $ docker run --rm -p 9090:9090   -v `pwd`/prometheus.yml:/etc/prometheus/prometheus.yml   prom/prometheus:v2.20.1```
