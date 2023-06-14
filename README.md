@@ -8,4 +8,6 @@ This time I will set up scraping of the default metrics and use the standard Gra
 
 https://grafana.com/blog/2018/08/02/the-red-method-how-to-instrument-your-services/
 
+
+
 ## Modifying the app files to allow Prometheus collecting metrics
