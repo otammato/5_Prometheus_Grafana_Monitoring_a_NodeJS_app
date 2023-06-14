@@ -12,6 +12,6 @@ https://grafana.com/blog/2018/08/02/the-red-method-how-to-instrument-your-servic
 
 ## Modifying the app files to allow Prometheus collecting metrics
 
-1. Installing a prom-client
+1. Installing ```prom-client```
    
   ```prom-client``` is the most popular Prometheus client libary for Node.js. It provides the building blocks to export metrics to Prometheus via the pull and push methods and supports all Prometheus metric types such as histogram, summaries, gauges and counters.
