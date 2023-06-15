@@ -68,7 +68,7 @@ global:
 scrape_configs:
   - job_name: "example-nodejs-app"
     static_configs:
-      - targets: ["localhost:3000"]
+      - targets: ["myapp:3000"]
 ```
 
 ```docker run --rm -p 9090:9090   -v `pwd`/prometheus.yml:/etc/prometheus/prometheus.yml   prom/prometheus:v2.20.1```
