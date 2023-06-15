@@ -85,7 +85,7 @@ datasources:
     type: prometheus
     access: proxy
     orgId: 1
-    url: prometheus:9090
+    url: prometheus:9090 # we previously assigned the name 'prometheus to the Prometheus container to make accessible by name
     basicAuth: false
     isDefault: true
     editable: true
