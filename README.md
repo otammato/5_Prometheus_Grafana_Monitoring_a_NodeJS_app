@@ -105,7 +105,13 @@ docker run --rm --network my-network -p 3001:3000   -e GF_AUTH_DISABLE_LOGIN_FOR
 <img width="1000" alt="Screenshot 2023-06-15 at 20 50 51" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/fc049196-baec-49ef-be36-2c082d3994cf">
 <img width="1000" alt="Screenshot 2023-06-15 at 20 52 33" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/ea5531be-9e5e-48e7-81f8-c872099a712f">
 
+<br>
+<br>
+
 2. 14058
+
+<img width="1327" alt="Screenshot 2023-06-15 at 20 58 34" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/85dfa1c6-4f1c-48fd-85ed-ab98ad04716c">
+
 <img width="1000" alt="Screenshot 2023-06-15 at 20 57 21" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/72746895-d99a-4d34-9e19-b9eda7d87eef">
 
 3.ttt
