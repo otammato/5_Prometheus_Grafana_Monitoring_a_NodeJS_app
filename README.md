@@ -85,7 +85,7 @@ datasources:
     type: prometheus
     access: proxy
     orgId: 1
-    url: http://localhost:9090
+    url: prometheus:9090
     basicAuth: false
     isDefault: true
     editable: true
