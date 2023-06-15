@@ -58,6 +58,9 @@ CMD ["npm", "run", "start"]
 
 ```docker run -d --name myapp --network my-network -p 3000:3000 myapp```
 
+<img width="1000" alt="Screenshot 2023-06-15 at 21 22 51" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/01a9db71-cbd4-4413-9c86-04980ede2ca2">
+
+
 ## Launch the Prometheus container
 
 ```cd FullStack_NodeJS_MySql_Prometheus/web_app_files/containers/node_app/prometheus```
