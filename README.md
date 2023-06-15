@@ -46,6 +46,9 @@ CMD ["npm", "run", "start"]
 
 <img width="1000" alt="Screenshot 2023-06-14 at 21 04 35" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/438a0b64-f451-4dbd-ac7a-dc4b22478064">
 
+## Create the network. Later we will place containers in the same network to enable communicating to each other
+
+```docker network create my-network```
 
 ## Launch the container with the Node.js application
 
@@ -53,7 +56,7 @@ CMD ["npm", "run", "start"]
 
 ```docker build -t myapp .```
 
-```docker run -p 3000:3000 myapp```
+```docker run -d --name myapp --network my-network -p 3000:3000 myapp```
 
 ## Launch the Prometheus container
 
