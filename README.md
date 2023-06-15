@@ -81,6 +81,8 @@ scrape_configs:
 
 <img width="1000" alt="Screenshot 2023-06-15 at 21 29 41" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/517212c9-a8a5-4207-b5f1-75a976663292">
 
+<img width="1000" alt="Screenshot 2023-06-15 at 21 30 55" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/5c7c84a5-b820-40a3-b3ce-905d520eb6d4">
+
 ## Launch the Grafana container
 
 ```cd FullStack_NodeJS_MySql_Prometheus/web_app_files/containers/node_app/grafana```
