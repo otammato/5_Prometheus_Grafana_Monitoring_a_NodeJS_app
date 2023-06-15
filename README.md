@@ -101,7 +101,8 @@ docker run --rm --network my-network -p 3001:3000   -e GF_AUTH_DISABLE_LOGIN_FOR
 
 ## Launch Grafana dashboards
 
-1.eee
+1.11159
+<img width="1000" alt="Screenshot 2023-06-15 at 20 50 51" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/fc049196-baec-49ef-be36-2c082d3994cf">
 
 2.rrr
 
