@@ -79,6 +79,7 @@ scrape_configs:
 
 <img width="1000" alt="Screenshot 2023-06-15 at 21 26 59" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/4ab138d1-53b7-4495-9c30-abda592589a1">
 
+<img width="1000" alt="Screenshot 2023-06-15 at 21 29 41" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/517212c9-a8a5-4207-b5f1-75a976663292">
 
 ## Launch the Grafana container
 
