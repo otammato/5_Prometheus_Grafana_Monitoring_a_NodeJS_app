@@ -68,7 +68,7 @@ global:
 scrape_configs:
   - job_name: "example-nodejs-app"
     static_configs:
-      - targets: ["myapp:3000"]
+      - targets: ["myapp:3000"] # we previously assigned the name 'myapp' to the Node.js container to make accessible by name
 ```
 
 ```docker run --rm -p 9090:9090   -v `pwd`/prometheus.yml:/etc/prometheus/prometheus.yml   prom/prometheus:v2.20.1```
@@ -85,7 +85,7 @@ datasources:
     type: prometheus
     access: proxy
     orgId: 1
-    url: prometheus:9090 # we previously assigned the name 'prometheus to the Prometheus container to make accessible by name
+    url: prometheus:9090 # we previously assigned the name 'prometheus' to the Prometheus container to make accessible by name
     basicAuth: false
     isDefault: true
     editable: true
