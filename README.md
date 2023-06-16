@@ -52,7 +52,9 @@ CMD ["npm", "run", "start"]
 <br>
 <br>
 
-## Create the network. Later we will place containers in the same network to enable them to communicate to each other
+## Create the network
+
+Later we will place containers in the same network to enable them to communicate to each other
 
 ```docker network create my-network```
 
