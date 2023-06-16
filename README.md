@@ -60,6 +60,8 @@ CMD ["npm", "run", "start"]
 
 <img width="1000" alt="Screenshot 2023-06-15 at 21 22 51" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/01a9db71-cbd4-4413-9c86-04980ede2ca2">
 
+The mwtrics now are exposed:
+
 <img width="1000" alt="Screenshot 2023-06-15 at 21 25 26" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/d6579c99-6ac9-4e79-b3cf-3b08b85d63b6">
 
 ## Launch the Prometheus container
