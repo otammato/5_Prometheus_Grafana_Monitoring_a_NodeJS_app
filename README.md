@@ -10,6 +10,9 @@ This time I will set up the scraping of the default metrics and will be using th
 
 https://grafana.com/blog/2018/08/02/the-red-method-how-to-instrument-your-services/
 
+<br>
+<br>
+
 ## Modifying the app files to allow Prometheus collecting metrics
 
 1. Installing the ```prom-client```
@@ -46,9 +49,15 @@ CMD ["npm", "run", "start"]
 
 <img width="1000" alt="Screenshot 2023-06-14 at 21 04 35" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/438a0b64-f451-4dbd-ac7a-dc4b22478064">
 
+<br>
+<br>
+
 ## Create the network. Later we will place containers in the same network to enable them to communicate to each other
 
 ```docker network create my-network```
+
+<br>
+<br>
 
 ## Launch the container with the Node.js application
 
@@ -63,6 +72,9 @@ CMD ["npm", "run", "start"]
 The mwtrics now are exposed:
 
 <img width="1000" alt="Screenshot 2023-06-15 at 21 25 26" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/d6579c99-6ac9-4e79-b3cf-3b08b85d63b6">
+
+<br>
+<br>
 
 ## Launch the Prometheus container
 
@@ -84,6 +96,9 @@ scrape_configs:
 <img width="1000" alt="Screenshot 2023-06-15 at 21 29 41" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/517212c9-a8a5-4207-b5f1-75a976663292">
 
 <img width="1000" alt="Screenshot 2023-06-15 at 21 30 55" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/5c7c84a5-b820-40a3-b3ce-905d520eb6d4">
+
+<br>
+<br>
 
 ## Launch the Grafana container
 
@@ -110,6 +125,8 @@ docker run --rm --network my-network -p 3001:3000   -e GF_AUTH_DISABLE_LOGIN_FOR
 
 <img width="1000" alt="Screenshot 2023-06-15 at 20 40 00" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/d527cd82-7f08-44e8-bc95-0e1e0d7000b9">
 
+<br>
+<br>
 
 ## Launch Grafana dashboards
 
