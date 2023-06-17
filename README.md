@@ -202,6 +202,8 @@ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-
 
 ```docker-compose --version```
 
+5. create the ```docker-composw.yml```
+
 ```yml
 version: '2.1'
 networks:
