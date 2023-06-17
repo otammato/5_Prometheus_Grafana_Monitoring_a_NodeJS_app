@@ -198,7 +198,9 @@ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-
 
 ```sudo chmod +x /usr/local/bin/docker-compose```
 
-4. 
+4. Verify that Docker Compose is installed:
+
+```docker-compose --version```
 
 ```yml
 version: '2.1'
