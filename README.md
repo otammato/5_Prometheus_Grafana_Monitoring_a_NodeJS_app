@@ -182,3 +182,56 @@ docker run --rm --network my-network -p 3001:3000   -e GF_AUTH_DISABLE_LOGIN_FOR
 3. 11956
 
 <img width="1327" alt="Screenshot 2023-06-15 at 21 03 19" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/47021402-b8be-4960-994e-57bc97701595">
+
+
+
+# Do the same with a docker-compose:
+
+```yml
+version: '2.1'
+networks:
+  my-network:
+    driver: bridge
+volumes:
+    prometheus_data: {}
+    grafana_data: {}
+services:
+  prometheus:
+    image: prom/prometheus:v2.20.1
+    container_name: prometheus
+    volumes:
+      - /home/ec2-user/environment/FullStack_NodeJS_MySql_Docker/web_app_files/containers/node_app/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    ports:
+      - 9090:9090
+    expose:
+      - 9090
+    networks:
+      - my-network
+  grafana:
+    image: grafana/grafana:7.1.5
+    container_name: grafana
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - /home/ec2-user/environment/FullStack_NodeJS_MySql_Docker/web_app_files/containers/node_app/grafana/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml
+    environment:
+      - GF_AUTH_DISABLE_LOGIN_FORM=true
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+    ports:
+      - 3001:3000
+    expose:
+      - 3000
+    networks:
+      - my-network
+  node-application-monitoring-app:
+    build:
+      context: /home/ec2-user/environment/FullStack_NodeJS_MySql_Docker/web_app_files/containers/node_app/codebase_partner
+    container_name: myapp
+    ports:
+      - 3000:3000
+    expose:
+      - 3000
+    networks:
+      - my-network
+```
