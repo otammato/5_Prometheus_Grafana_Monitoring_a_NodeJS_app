@@ -63,13 +63,19 @@ Later we will place containers in the same network to enable them communicate to
 
 ## Launch the container with the Node.js application
 
-navigate to the application folder
+Navigate to the application folder.
 
 ```cd FullStack_NodeJS_MySql_Prometheus/web_app_files/containers/node_app/codebase_partner```
 
+Build the image. Make sure the Dockerfile is in the same folder.
+
 ```docker build -t myapp .```
 
+Run the container:
+
 ```docker run -d --name myapp --network my-network -p 3000:3000 myapp```
+
+This command runs the container named "myapp" based on an image called "myapp". The container is running detached (-d flag), using a network called "my-network" (--network flag), and mapping port 3000 from the container to port 3000 on the host (-p flag)
 
 <img width="1000" alt="Screenshot 2023-06-15 at 21 22 51" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/01a9db71-cbd4-4413-9c86-04980ede2ca2">
 
