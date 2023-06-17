@@ -189,8 +189,16 @@ docker run --rm --network my-network -p 3001:3000   -e GF_AUTH_DISABLE_LOGIN_FOR
 
 # Do the same with docker-compose:
 
-```sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose```
+1. Download the Docker Compose binary:
 
+```
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+2. Make the Docker Compose binary executable:
+
+```sudo chmod +x /usr/local/bin/docker-compose```
+
+4. 
 
 ```yml
 version: '2.1'
