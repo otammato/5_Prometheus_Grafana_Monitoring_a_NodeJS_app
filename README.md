@@ -149,6 +149,8 @@ datasources:
     editable: true
 ```
 
+3. Run a Grafana container with specific configurations
+
 ```
 docker run --rm --network my-network -p 3001:3000   -e GF_AUTH_DISABLE_LOGIN_FORM=true   -e GF_AUTH_ANONYMOUS_ENABLED=true   -e GF_AUTH_ANONYMOUS_ORG_ROLE=Admin   -v `pwd`/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml   grafana/grafana:7.1.5
 ```
