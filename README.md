@@ -187,7 +187,7 @@ docker run --rm --network my-network -p 3001:3000   -e GF_AUTH_DISABLE_LOGIN_FOR
 <br>
 <br>
 
-# Do the same with a docker-compose:
+# Do the same with docker-compose:
 
 ```yml
 version: '2.1'
@@ -236,4 +236,8 @@ services:
       - 3000
     networks:
       - my-network
+```
+
+```
+docker-compose up -d 
 ```
