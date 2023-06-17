@@ -91,6 +91,8 @@ Check the ```/metrics``` endpoint. The metrics now are exposed:
 
 ## Launch the Prometheus container
 
+Navigate to the folder:
+
 ```cd FullStack_NodeJS_MySql_Prometheus/web_app_files/containers/node_app/prometheus```
 
 ```yml
@@ -99,7 +101,7 @@ global:
 scrape_configs:
   - job_name: "example-nodejs-app"
     static_configs:
-      - targets: ["myapp:3000"] # we previously assigned the name 'myapp' to the Node.js container to make accessible by name
+      - targets: ["myapp:3000"] # we previously assigned the name 'myapp' to the Node.js container to make it accessible by name
 ```
 
 ```docker run --rm -p 9090:9090   -v `pwd`/prometheus.yml:/etc/prometheus/prometheus.yml   prom/prometheus:v2.20.1```
