@@ -198,11 +198,11 @@ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-
 
 ```sudo chmod +x /usr/local/bin/docker-compose```
 
-4. Verify that Docker Compose is installed:
+3. Verify that Docker Compose is installed:
 
 ```docker-compose --version```
 
-5. create the ```docker-composw.yml```
+4. create the ```docker-composw.yml```
 
 ```yml
 version: '2.1'
@@ -252,6 +252,8 @@ services:
     networks:
       - my-network
 ```
+
+5. Launch the scenario:
 
 ```
 docker-compose up -d 
