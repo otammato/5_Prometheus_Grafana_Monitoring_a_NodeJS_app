@@ -95,6 +95,10 @@ Navigate to the folder:
 
 ```cd FullStack_NodeJS_MySql_Prometheus/web_app_files/containers/node_app/prometheus```
 
+configuration file specifies a global scrape interval of 5 seconds and defines a scrape configuration for a job named "example-nodejs-app".
+
+In the scrape configuration, a static target is specified with the value ```myapp:3000```. This target refers to the container named ```myapp``` running on port 3000. By assigning the name "myapp" to the container, it can be accessed by that name within the Prometheus configuration.
+
 ```yml
 global:
   scrape_interval: 5s
