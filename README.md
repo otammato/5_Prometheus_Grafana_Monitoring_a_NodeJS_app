@@ -1,4 +1,4 @@
-# Prometheus_Grafana_Monitoring_a_NodeJS_app
+# Prometheus_Grafana_Monitoring_a_NodeJS_app_Dockerized
 
 For this demo I will set up monitoring with Prometheus and Grafana of the Node.js app previously used in this project:
 
