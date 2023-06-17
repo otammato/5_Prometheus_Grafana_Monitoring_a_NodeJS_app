@@ -63,6 +63,8 @@ Later we will place containers in the same network to enable them communicate to
 
 ## Launch the container with the Node.js application
 
+navigate to the application folder
+
 ```cd FullStack_NodeJS_MySql_Prometheus/web_app_files/containers/node_app/codebase_partner```
 
 ```docker build -t myapp .```
