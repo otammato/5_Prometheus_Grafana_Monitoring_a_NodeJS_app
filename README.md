@@ -127,7 +127,13 @@ scrape_configs:
 
 ## Launch the Grafana container
 
+1. Navigate to the folder:
+
 ```cd FullStack_NodeJS_MySql_Prometheus/web_app_files/containers/node_app/grafana```
+
+2. Create the configuration file "datasources.yml"
+
+```vi datasources.yml```
 
 ```yml
 apiVersion: 1
