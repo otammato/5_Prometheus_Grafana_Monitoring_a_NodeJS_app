@@ -183,7 +183,9 @@ docker run --rm --network my-network -p 3001:3000   -e GF_AUTH_DISABLE_LOGIN_FOR
 
 <img width="1327" alt="Screenshot 2023-06-15 at 21 03 19" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/47021402-b8be-4960-994e-57bc97701595">
 
-
+<br>
+<br>
+<br>
 
 # Do the same with a docker-compose:
 
