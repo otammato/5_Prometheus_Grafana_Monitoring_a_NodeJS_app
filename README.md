@@ -6,7 +6,7 @@ https://github.com/otammato/FullStack_NodeJS_MySql_Docker.git
 
 <img width="700" alt="Screenshot 2023-06-14 at 22 37 33" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/1ad3ea29-ea41-4624-a0f5-89dd16fda007">
 
-This time I will set up the scraping of the default metrics and will be using the standard Grafana dashboards. However, in upcoming projects I plan to set up scraping of "RED" or "USE" metrics following this approach:
+This time I will set up the scraping of the default metrics and visualising them with standard Grafana dashboards. However, in the upcoming projects I plan to set up scraping of "RED" or "USE" metrics following this approach:
 
 https://grafana.com/blog/2018/08/02/the-red-method-how-to-instrument-your-services/
 
