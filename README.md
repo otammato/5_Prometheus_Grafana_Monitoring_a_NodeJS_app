@@ -265,6 +265,6 @@ docker-compose up -d
 <br>
 <br>
 
-# Do the same with docker-compose:
+# Do the same with Ansible:
 
 <img width="1000" alt="Screenshot 2023-06-18 at 21 36 10" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/c43d2e2e-be59-4e0f-a3e4-da2cad95d874">
