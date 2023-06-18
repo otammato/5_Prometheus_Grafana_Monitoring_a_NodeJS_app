@@ -267,6 +267,27 @@ docker-compose up -d
 
 # Do the same with Ansible:
 
+```
+sudo yum install python3-pip python3-devel gcc
+```
+
+```
+sudo pip3 install ansible
+```
+
+
+```
+sudo yum install -y docker
+```
+
+```
+sudo systemctl start docker
+```
+
+```
+sudo usermod -aG docker $USER
+```
+
 ```yml
 ---
 - name: Deploy Docker containers with Ansible
