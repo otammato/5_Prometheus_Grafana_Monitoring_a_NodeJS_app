@@ -267,4 +267,75 @@ docker-compose up -d
 
 # Do the same with Ansible:
 
+```yml
+---
+- name: Deploy Docker containers with Ansible
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Create Docker network
+      docker_network:
+        name: my-network
+        driver: bridge
+
+    - name: Create Docker volumes
+      docker_volume:
+        name: prometheus_data
+
+    - name: Create Docker volumes
+      docker_volume:
+        name: grafana_data
+
+    - name: Start Prometheus container
+      docker_container:
+        name: prometheus
+        image: prom/prometheus:v2.20.1
+        volumes:
+          - ./prometheus.yml:/etc/prometheus/prometheus.yml
+          - prometheus_data:/prometheus
+        ports:
+          - 9090:9090
+        expose:
+          - 9090
+        networks:
+          - name: my-network
+
+    - name: Start Grafana container
+      docker_container:
+        name: grafana
+        image: grafana/grafana:7.1.5
+        volumes:
+          - grafana_data:/var/lib/grafana
+          - ./datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml
+        env:
+          GF_AUTH_DISABLE_LOGIN_FORM: "true"
+          GF_AUTH_ANONYMOUS_ENABLED: "true"
+          GF_AUTH_ANONYMOUS_ORG_ROLE: "Admin"
+        ports:
+          - 3001:3000
+        expose:
+          - 3000
+        networks:
+          - name: my-network
+
+    - name: Build Node.js application image
+      docker_image:
+        name: myapp
+        build:
+          path: ./codebase_partner
+          dockerfile: Dockerfile
+
+    - name: Start Node.js application container
+      docker_container:
+        name: myapp
+        image: myapp
+        ports:
+          - 3000:3000
+        expose:
+          - 3000
+        networks:
+          - name: my-network
+```
+
 <img width="1000" alt="Screenshot 2023-06-18 at 21 36 10" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/c43d2e2e-be59-4e0f-a3e4-da2cad95d874">
