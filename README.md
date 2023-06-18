@@ -261,4 +261,4 @@ docker-compose up -d
 <img width="700" alt="Screenshot 2023-06-17 at 16 31 24" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/114f5233-3f00-43c4-9e9e-c0a6aef416b1">
 
 
-<img width="700" alt="Screenshot 2023-06-18 at 21 36 10" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/c43d2e2e-be59-4e0f-a3e4-da2cad95d874">
+<img width="1000" alt="Screenshot 2023-06-18 at 21 36 10" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/c43d2e2e-be59-4e0f-a3e4-da2cad95d874">
