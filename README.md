@@ -288,6 +288,10 @@ sudo systemctl start docker
 sudo usermod -aG docker $USER
 ```
 
+```
+ansible-playbook deploy-containers.yml
+```
+
 ```yml
 ---
 - name: Deploy Docker containers with Ansible
