@@ -294,6 +294,32 @@ sudo usermod -aG docker $USER
 ansible-playbook deploy-containers.yml
 ```
 
+2. Ubuntu 22.04 :
+
+```
+sudo apt-get install ansible
+```
+
+```
+ansible-galaxy collection install community.docker
+```
+
+```
+sudo apt install python3-pip
+```
+
+```
+sudo pip3 install docker
+```
+
+```
+sudo usermod -aG docker $USER
+```
+
+```
+ansible-playbook deploy-containers.yml
+```
+
 ```yml
 ---
 - name: Deploy Docker containers with Ansible
