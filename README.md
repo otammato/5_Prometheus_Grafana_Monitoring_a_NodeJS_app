@@ -267,6 +267,8 @@ docker-compose up -d
 
 # Do the same with Ansible:
 
+1. RHEL:
+
 ```
 sudo yum install python3-pip python3-devel gcc
 ```
