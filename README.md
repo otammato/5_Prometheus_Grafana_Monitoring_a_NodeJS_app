@@ -4,7 +4,7 @@ For this demo I will set up monitoring with Prometheus and Grafana of the Node.j
 
 https://github.com/otammato/FullStack_NodeJS_MySql_Docker.git
 
-I will set up the app and its monitoring with different approaches:
+I set up the app and its monitoring using different approaches:
 1. Manual deployment with Docker containers
 2. Docker-compose
 3. Ansible playbook
