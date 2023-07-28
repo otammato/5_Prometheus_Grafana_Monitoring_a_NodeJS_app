@@ -4,6 +4,11 @@ For this demo I will set up monitoring with Prometheus and Grafana of the Node.j
 
 https://github.com/otammato/FullStack_NodeJS_MySql_Docker.git
 
+I will set upp the app and its monitoring with different approaches:
+1. Manual deployment with Docker containers
+2. Docker-compose
+3. Ansible playbook
+
 <img width="700" alt="Screenshot 2023-06-14 at 22 37 33" src="https://github.com/otammato/Prometheus_Grafana_Monitoring_a_NodeJS_app/assets/104728608/1ad3ea29-ea41-4624-a0f5-89dd16fda007">
 
 This time I am setting up the scraping of the default metrics and visualising them with standard Grafana dashboards. However, in the upcoming projects I plan to set up scraping of "RED" or "USE" metrics following this approach:
