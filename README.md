@@ -6,6 +6,7 @@
 - Grafana
 - Docker
 - Docker-compose
+- Ansible
 - NodeJS
 - MySQL
 - AWS Cloud
