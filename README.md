@@ -2,7 +2,6 @@
 
 ## Technologies used
 
-- Kubernetes
 - Prometheus
 - Grafana
 - Docker
