@@ -1,5 +1,14 @@
 # Prometheus_Grafana_Monitoring_a_NodeJS_app_Dockerized
 
+## Technologies used
+
+- Kubernetes
+- Docker
+- DockerHub
+- NodeJS
+- MySQL
+- AWS Cloud
+
 For this demo I will set up monitoring with Prometheus and Grafana of the Node.js app previously used in this project:
 
 https://github.com/otammato/FullStack_NodeJS_MySql_Docker.git
