@@ -3,8 +3,10 @@
 ## Technologies used
 
 - Kubernetes
+- Prometheus
+- Grafana
 - Docker
-- DockerHub
+- Docker-compose
 - NodeJS
 - MySQL
 - AWS Cloud
